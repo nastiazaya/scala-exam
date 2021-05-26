@@ -1,0 +1,9 @@
+{
+    "minAge": 5,
+    "maxAge": 40,
+    "gender": "Male",
+    "prefixName": "An",
+    "maritalStatus": "Married",
+    "numberOfChildren": 2
+}
+

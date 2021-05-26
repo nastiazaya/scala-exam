@@ -10,10 +10,10 @@ trait ValidDataLoaderDependency extends ValidLoaderDependency {
 }
 
 trait ValidPersonJsonFileDataLoaderDependency extends ValidDataLoaderDependency {
-  override val loader: FileLoader = JsonFileFileLoader
+  override val loader: FileLoader = JsonDataFileLoader
 }
 
 trait ValidClientExelFileDataLoaderDependency extends ValidDataLoaderDependency {
-  override val loader: FileLoader = ExcelFileFileLoader
+  override val loader: FileLoader = ExcelDataFileLoader
 }
 

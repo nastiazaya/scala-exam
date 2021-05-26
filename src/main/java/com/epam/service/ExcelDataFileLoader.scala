@@ -5,7 +5,7 @@ import com.epam.model.Client
 import org.apache.spark.sql.{Dataset, Encoder, Encoders, SparkSession}
 import scala.reflect.runtime.universe._
 
-object ExcelFileFileLoader extends FileLoader {
+object ExcelDataFileLoader extends FileLoader {
 
 
 

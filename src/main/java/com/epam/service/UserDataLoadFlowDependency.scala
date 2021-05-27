@@ -6,7 +6,7 @@ import org.apache.spark.sql.SparkSession
 
 import java.util.Properties
 //Scala factory/Dependency Injection pattern implementation
-//Pay attention this is not a cake pattern which is considering as anti pattern
+
 trait UserDataLoadFlowDependency {
 
 }
@@ -33,8 +33,5 @@ trait UserDataLoadFlowService {
 
 }
 
-/*trait UserServiceImpl extends UserService with UserServiceDependencyLoaders {
-  override def load(request: UserRequest)(implicit sparkSession: SparkSession): Unit = ???
-}*/
 
 

@@ -15,8 +15,7 @@ object UserDataLoadFlowServiceImpl extends UserDataLoadFlowService with UserData
 
     val filteredData = filterByRequestParams(request = request, dsClient = clientData, dsPerson = personData)
 
-
-    val responseData = personData.union(clientData.map(p => convertToPerson(p)))
+    val responseData = filteredData._2.union(filteredData._1.map(p => convertToPerson(p)))
     responseData.show()
 
     //SaveJsonDataFile.save[Person](config.getProperty("data.path.responseJsonFile"),responseData)
